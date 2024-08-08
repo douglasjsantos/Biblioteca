@@ -14,8 +14,12 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String nome;
+
+    @Column(unique = true)
     private String email;
     private String senha;
+
+    @Column(unique = true)
     private String cpf;
     private String telefone;
 
